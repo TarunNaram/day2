@@ -1,0 +1,6 @@
+#include<stdio.h>
+#define true 1
+int main() 
+{
+    printf("value of true is %d",true);
+}
