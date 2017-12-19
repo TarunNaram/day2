@@ -10,6 +10,6 @@ int main()
         scanf("%d",&n);
         sum=sum+n;
     }
-    avg=sum/10;
+    avg=(float)sum/10;
     printf("The sum of 10 no is : %d \nThe Average is : %f",sum,avg);
 }
