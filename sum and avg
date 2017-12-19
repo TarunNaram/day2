@@ -1,12 +1,15 @@
 #include<stdio.h>
 int main()
 {
-   int i,n;
-   scanf("%d",&n);
-   printf("Input number of terms : %d\n",n);
-   for(i=1;i<=n;i++)
-   {
-       
-       printf("Number is : %d and cube of the %d is : %d\n",i,i,(i*i*i));
-   }
+    int i,n,sum=0;
+    float avg;
+    printf("Input the 10 numbers : \n");
+    for(i=1;i<=10;i++)
+    {
+        printf("Number-1 :\n",n);
+        scanf("%d",&n);
+        sum=sum+n;
+    }
+    avg=sum/10;
+    printf("The sum of 10 no is : %d \nThe Average is : %f",sum,avg);
 }
