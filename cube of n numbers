@@ -2,8 +2,8 @@
 int main()
 {
    int i,n;
-   printf("Input number of terms :\n");
    scanf("%d",&n);
+   printf("Input number of terms : %d\n",n);
    for(i=1;i<=n;i++)
    {
        
