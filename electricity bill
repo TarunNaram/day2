@@ -22,7 +22,7 @@ int main()
     else
         {
             printf("\nAmount Charges @Rs. 2.00 per unit : %.2f",(bill*2.00));
-            if(s>=100)
+            if(t>=100)
                 printf("\nSurchage Amount : %.2f",t);
                 printf("\nNet Amount Paid By the Customer : %.2f",(t+bill*2));
         }
