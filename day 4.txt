@@ -1,0 +1,86 @@
+1)call by value
+#include<stdio.h>
+void main()
+{
+int a,b;
+clrscr();
+scanf("%d %d",&a,&b);
+c=addition(a,b);
+}
+int addition(int x,int y)
+{
+z=x+y;
+return z;
+getch();
+}
+
+2)call by reference
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a=10,b=20;
+clrscr();
+swap(&a,&b);
+printf("%d%d",a,b);
+getch();
+}
+swap(int *a,int *b)
+{
+int t;
+t=*a;
+*a=*b;
+*b=t;
+printf("%d%d",*a,*b);
+return;
+}
+
+3)
+#include<stdio.h>
+int main()
+{
+char str[10];
+clrscr();
+printf("main executed");
+abc();
+
+getch();
+ return;
+}
+int abc()
+{
+
+printf("\nabc executed");
+bbc();
+return;
+}
+bbc()
+{
+printf("\nbbc executed");
+return;
+}
+
+
+4)global,local,const,#defineand ternary 
+#include<stdio.h>
+#define tarun 18
+int a=10;
+void main()
+{
+int const a=20;
+int c=2;
+
+clrscr();
+printf("%d",a);
+printf("\n%d",tarun);
+printf("\n%d",(c==2)? 10:30);
+printf("\n%d",c);
+sample( a);
+getch();
+}
+sample(int  x)
+{
+x=30;
+printf("\n%d",x);
+return;
+}
